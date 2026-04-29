@@ -1,7 +1,7 @@
 {
-  "name": "vercel-xhttp-relay",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Edge-runtime XHTTP relay for Xray/V2Ray on Vercel",
+  "description": "A personal portfolio website built with Node.js and Express.",
   "private": true,
   "license": "MIT"
 }

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Mohsen</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0b1020;
+        --panel: #121a33;
+        --text: #e6ebff;
+        --muted: #a8b2d1;
+        --accent: #7aa2ff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        background: radial-gradient(circle at top, #162146, var(--bg) 55%);
+        color: var(--text);
+        min-height: 100vh;
+      }
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 48px 20px 72px;
+      }
+      .card {
+        background: color-mix(in srgb, var(--panel) 90%, transparent);
+        border: 1px solid #23315f;
+        border-radius: 16px;
+        padding: 28px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 2rem;
+      }
+      p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .stack {
+        margin-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .chip {
+        background: #1a2750;
+        color: #d9e2ff;
+        border: 1px solid #2b3f7d;
+        border-radius: 999px;
+        padding: 8px 14px;
+        font-size: 0.9rem;
+      }
+      .cta {
+        margin-top: 26px;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card">
+        <h1>Mohsen Portfolio</h1>
+        <p>
+          I build practical web products with clean interfaces and reliable backend
+          integrations. This site is now served from the root path while API relay
+          functionality is available under <code>/api</code>.
+        </p>
+        <div class="stack">
+          <span class="chip">JavaScript</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Edge Functions</span>
+          <span class="chip">Vercel</span>
+        </div>
+        <p class="cta">
+          API endpoint example:
+          <a href="/api/" aria-label="Open API route">/api/</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
